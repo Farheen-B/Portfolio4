@@ -451,3 +451,58 @@ form button:hover {
   animation: float 4s ease-in-out infinite;
   opacity: 0.8;
 }
+/* Services Section */
+.services {
+  padding: 60px 0;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.service {
+  background-color: #222;
+  padding: 25px;
+  border-radius: 10px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  background-color: #333;
+}
+
+.service img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
